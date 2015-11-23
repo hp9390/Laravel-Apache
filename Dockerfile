@@ -20,5 +20,3 @@ RUN  phpDeps='libxml2 \
   && echo "extension=mongo.so" > /etc/php5/mods-available/mongo.ini \
   && a2enmod rewrite \
   && php5enmod mcrypt mongo \
-  && sed -i -e "s/variables_order.*/variables_order = \"EGPCS\"/g" /etc/php5/apache2/php.ini \
-  && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
