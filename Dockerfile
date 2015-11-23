@@ -14,7 +14,7 @@ RUN  phpDeps='libxml2 \
               libapache2-mod-php5filter \
               php5-cgi \
               php5-fpm \
-              php5
+              php5 \
               php-apc' \
   && apt-get update -qq \
   && apt-get install -y -qq $phpDeps \
