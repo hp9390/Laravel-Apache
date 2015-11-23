@@ -1,7 +1,6 @@
 FROM php:5.6.15-apache
 RUN  phpDeps='libxml2 \
               libcurl4-openssl-dev \
-              libapache2-mod-php5 \
               php5-dev \
               php5-cli \
               php5-mysql \
